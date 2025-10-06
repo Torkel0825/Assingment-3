@@ -88,7 +88,7 @@ const people = [
 ];
 let combinedAge = 0;
 
-// Skriv koden for oppgave 1 her
+/// Skriv koden for oppgave 1 her
 for (let index = 0; index < people.length; index++) {
   console.log(index);
 }
