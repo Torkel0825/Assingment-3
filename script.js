@@ -89,11 +89,40 @@ const people = [
 let combinedAge = 0;
 
 /// Skriv koden for oppgave 1 her
-for (let index = 0; index < people.length; index++) {
-  console.log(index);
+
+/*
+for (let person of people) {
+  //
+  if (person.name === "Otto") {
+    console.log(person);
+    continue;
+  } else {
+    person.city = cities[Math.floor(Math.random() * cities.length)];
+    console.log(person.city);
+  }
+  //
+  if (person.male === "True") person.title = "Mr. ";
+  else person.title = "Ms. ";
+  //
+  person.age++;
+  person.age++;
+
+  //
+  person.hobbies.unshift("coding");
+
+  console.log(person);
+
+  //
+  combinedAge += person.age;
+
+  //
 }
 let averageAge = 0;
+averageAge = combinedAge / people.length;
+console.log(combinedAge);
+console.log(averageAge);
 
+*/
 /******************************************************************************
 2.
 
@@ -115,6 +144,25 @@ diceRoller(5, 20) skal returnere et array med 5 tilfeldige tall fra 1-20.
 ******************************************************************************/
 
 // Skriv koden for oppgave 2 her
+
+/*
+function randomNu(tall, sider) {
+  let diceRoll = [];
+
+  //
+
+  for (let n = 0; n < tall; n++) {
+    let numRan = Math.floor(Math.random() * sider) + 1;
+    diceRoll.push(numRan);
+  }
+  console.log(diceRoll);
+  return diceRoll;
+}
+
+randomNu(4, 12);
+console.log();
+
+*/
 
 /******************************************************************************
 3.
@@ -142,6 +190,26 @@ skal returnere:
 ******************************************************************************/
 
 // Skriv koden for oppgave 3 her
+
+/*
+
+let stringSentence;
+function cleanSentences(sentence) {
+  //
+  let sentenceClean = [];
+  for (let i = 0; i < sentence.length; i++) {
+    let word = sentence[i];
+    sentenceClean.push(word.toLowerCase().trim());
+  }
+  console.log(sentenceClean);
+  stringSentence = sentenceClean.join(" ");
+  return stringSentence;
+}
+cleanSentences([" thIS", "teXt  ", " nEeds ", "to", "BE", "cleANED   ", " Up"]);
+console.log();
+console.log(stringSentence);
+
+*/
 
 /******************************************************************************
 4.
