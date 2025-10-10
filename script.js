@@ -236,10 +236,22 @@ skal returnere "whao is ohe ptino tf ohis?"
 
 ******************************************************************************/
 
+/*
+let newString;
 function doubleSwap(string, charA, charB) {
   // Skriv koden for oppgave 4 her
+  for (let i = 0; i < charA.length; i++) {
+    charA = new RegExp(charA, "g");
+    newString = string.replace(charA, charB);
+  }
+  console.log(newString);
 }
+console.log(newString);
 
+doubleSwap("there is a sentence there, yo", "e", 3);
+
+*/
+//still don't fully understand the regexp usage here, but that might just be me wanting to solve this without that and only with .replace..
 /******************************************************************************
 5.
 
